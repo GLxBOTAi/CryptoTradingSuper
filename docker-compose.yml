@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  protocol:
+    container_name: trading-agent-core
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    ports:
+      - "5051:5051"
+    env_file:
+      - ../.env
+    volumes:
+      - ../v2_core:/app/v2_core
+      - ../data:/app/data
+      - ../scripts:/app/scripts
+
+  dashboard:
+    container_name: trading-agent-dashboard
+    build:
+      context: ../dashboard-ui
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - protocol
+
