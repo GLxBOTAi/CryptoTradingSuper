@@ -1,0 +1,1 @@
+# Regenerated placeholder for scripts/claim_checker.py

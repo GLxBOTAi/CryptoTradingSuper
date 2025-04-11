@@ -1,0 +1,1 @@
+# Regenerated placeholder for scripts/telegram_bot.py
