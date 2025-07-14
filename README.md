@@ -17,7 +17,7 @@
   - Scalping
   - Swing Trading
   - Position Trading
-  - Swaping
+  - Swapping
   - Spot Trading
   - Pump and Dump
 
@@ -71,7 +71,7 @@
    - Edit the `config.json` file with your API keys and preferences.
 4. Run the bot:
    ```bash
-   python bot.py
+   python scripts/run_protocol.py
    ```
 
 ---
@@ -90,7 +90,7 @@
 
 ## 🔗 Supported Exchanges
 
-- Dex Sceener 
+- Dex Screener
 - Binance
 - Coinbase Pro
 - Kraken
